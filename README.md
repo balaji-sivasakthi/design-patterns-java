@@ -1,6 +1,8 @@
-# Design Patterns
+<h1 align="center">  Design Patterns in Java</h1>
 
-This repository demonstrates various design patterns commonly used in software development. Design patterns are reusable solutions to common problems that arise during software design and development. They provide a structured approach to solving design-related issues and improving code maintainability, scalability, and flexibility.
+<p align="center">
+   This repository demonstrates various design patterns commonly used in software development. Design patterns are reusable solutions to common problems that arise during software design and development. They provide a structured approach to solving design-related issues and improving code maintainability, scalability, and flexibility.
+</p>
 
 ## Table of Contents
 
