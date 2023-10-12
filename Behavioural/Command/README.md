@@ -1,13 +1,17 @@
 # Command Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Command design pattern in Java. The Command pattern is a behavioral design pattern that encapsulates a request as an object, allowing for parameterization of clients with requests and operations. It provides a way to decouple the sender of a request from its receiver and supports undoable operations.
+This project provides an example implementation of the Command design pattern in Java. The Command pattern is a
+behavioral design pattern that encapsulates a request as an object, allowing for parameterization of clients with
+requests and operations. It provides a way to decouple the sender of a request from its receiver and supports undoable
+operations.
 
 ## Motivation
 
@@ -22,12 +26,15 @@ This pattern provides a flexible and extensible way to manage commands and opera
 
 ## Real-World Example
 
-**Scenario**: In a home automation system, you have various devices like lights, fans, and thermostats that you want to control through a remote control. The Command pattern can be used to encapsulate the commands for turning these devices on and off, allowing undoable operations.
+**Scenario**: In a home automation system, you have various devices like lights, fans, and thermostats that you want to
+control through a remote control. The Command pattern can be used to encapsulate the commands for turning these devices
+on and off, allowing undoable operations.
 
 ```java
 // Command interface
 interface Command {
     void execute();
+
     void undo();
 }
 

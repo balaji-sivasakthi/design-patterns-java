@@ -1,13 +1,16 @@
 # Interpreter Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Interpreter design pattern in Java. The Interpreter pattern is a behavioral design pattern used to define a grammar for interpreting a language and evaluate language expressions. It involves defining a syntax tree representing the grammar and then interpreting language expressions using this tree.
+This project provides an example implementation of the Interpreter design pattern in Java. The Interpreter pattern is a
+behavioral design pattern used to define a grammar for interpreting a language and evaluate language expressions. It
+involves defining a syntax tree representing the grammar and then interpreting language expressions using this tree.
 
 ## Motivation
 
@@ -22,7 +25,8 @@ This pattern provides a way to parse and evaluate language expressions using a w
 
 ## Real-World Example
 
-**Scenario**: In a simple calculator application, you want to provide the ability to evaluate mathematical expressions. The Interpreter pattern can be used to define a grammar for mathematical expressions and evaluate them.
+**Scenario**: In a simple calculator application, you want to provide the ability to evaluate mathematical expressions.
+The Interpreter pattern can be used to define a grammar for mathematical expressions and evaluate them.
 
 ```java
 // Abstract expression interface
@@ -62,8 +66,8 @@ class AdditionExpression implements Expression {
 public class Main {
     public static void main(String[] args) {
         Expression expression = new AdditionExpression(
-            new NumberExpression(5),
-            new NumberExpression(3)
+                new NumberExpression(5),
+                new NumberExpression(3)
         );
 
         int result = expression.interpret();

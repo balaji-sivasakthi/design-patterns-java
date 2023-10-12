@@ -3,24 +3,31 @@ package Structural.Facade;
 // Subsystem components
 class DVDPlayer {
     void on() { /* Implementation */ }
+
     void play(String movie) { /* Implementation */ }
+
     void stop() { /* Implementation */ }
 }
 
 class Amplifier {
     void on() { /* Implementation */ }
+
     void setSurroundSound() { /* Implementation */ }
+
     void setVolume(int volume) { /* Implementation */ }
 }
 
 class Projector {
     void on() { /* Implementation */ }
+
     void setInput(DVDPlayer dvdPlayer) { /* Implementation */ }
+
     void wideScreenMode() { /* Implementation */ }
 }
 
 class Screen {
     void down() { /* Implementation */ }
+
     void up() { /* Implementation */ }
 }
 

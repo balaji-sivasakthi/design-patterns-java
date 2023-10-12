@@ -1,13 +1,16 @@
 # Memento Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Memento design pattern in Java. The Memento pattern is a behavioral design pattern that allows you to capture and externalize the internal state of an object without violating encapsulation. It is used for saving and restoring an object's state or implementing undo/redo functionality.
+This project provides an example implementation of the Memento design pattern in Java. The Memento pattern is a
+behavioral design pattern that allows you to capture and externalize the internal state of an object without violating
+encapsulation. It is used for saving and restoring an object's state or implementing undo/redo functionality.
 
 ## Motivation
 
@@ -22,7 +25,9 @@ This pattern is useful for applications that require state management, version c
 
 ## Real-World Example
 
-**Scenario**: In a text editor application, you want to provide undo and redo functionality for text changes. The Memento pattern can be used to capture and save the state of the text editor at different points in time and allow users to revert to previous states.
+**Scenario**: In a text editor application, you want to provide undo and redo functionality for text changes. The
+Memento pattern can be used to capture and save the state of the text editor at different points in time and allow users
+to revert to previous states.
 
 ```java
 // Originator

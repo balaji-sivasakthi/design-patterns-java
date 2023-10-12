@@ -7,33 +7,33 @@
 ## Table of Contents
 
 1. [Creational Patterns](#creational-patterns)
-   - [Singleton Pattern](#singleton-pattern)
-   - [Factory Method Pattern](#factory-method-pattern)
-   - [Abstract Factory Pattern](#abstract-factory-pattern)
-   - [Builder Pattern](#builder-pattern)
-   - [Prototype Pattern](#prototype-pattern)
+    - [Singleton Pattern](#singleton-pattern)
+    - [Factory Method Pattern](#factory-method-pattern)
+    - [Abstract Factory Pattern](#abstract-factory-pattern)
+    - [Builder Pattern](#builder-pattern)
+    - [Prototype Pattern](#prototype-pattern)
 
 2. [Structural Patterns](#structural-patterns)
-   - [Adapter Pattern](#adapter-pattern)
-   - [Bridge Pattern](#bridge-pattern)
-   - [Composite Pattern](#composite-pattern)
-   - [Decorator Pattern](#decorator-pattern)
-   - [Facade Pattern](#facade-pattern)
-   - [Flyweight Pattern](#flyweight-pattern)
-   - [Proxy Pattern](#proxy-pattern)
+    - [Adapter Pattern](#adapter-pattern)
+    - [Bridge Pattern](#bridge-pattern)
+    - [Composite Pattern](#composite-pattern)
+    - [Decorator Pattern](#decorator-pattern)
+    - [Facade Pattern](#facade-pattern)
+    - [Flyweight Pattern](#flyweight-pattern)
+    - [Proxy Pattern](#proxy-pattern)
 
 3. [Behavioral Patterns](#behavioral-patterns)
-   - [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
-   - [Command Pattern](#command-pattern)
-   - [Interpreter Pattern](#interpreter-pattern)
-   - [Iterator Pattern](#iterator-pattern)
-   - [Mediator Pattern](#mediator-pattern)
-   - [Memento Pattern](#memento-pattern)
-   - [Observer Pattern](#observer-pattern)
-   - [State Pattern](#state-pattern)
-   - [Strategy Pattern](#strategy-pattern)
-   - [Template Method Pattern](#template-method-pattern)
-   - [Visitor Pattern](#visitor-pattern)
+    - [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
+    - [Command Pattern](#command-pattern)
+    - [Interpreter Pattern](#interpreter-pattern)
+    - [Iterator Pattern](#iterator-pattern)
+    - [Mediator Pattern](#mediator-pattern)
+    - [Memento Pattern](#memento-pattern)
+    - [Observer Pattern](#observer-pattern)
+    - [State Pattern](#state-pattern)
+    - [Strategy Pattern](#strategy-pattern)
+    - [Template Method Pattern](#template-method-pattern)
+    - [Visitor Pattern](#visitor-pattern)
 
 ## Creational Patterns
 
@@ -43,25 +43,30 @@
 
 ### Factory Method Pattern
 
-**Purpose**: Defines an interface for creating an object but lets subclasses alter the type of objects that will be created.
+**Purpose**: Defines an interface for creating an object but lets subclasses alter the type of objects that will be
+created.
 
 ### Abstract Factory Pattern
 
-**Purpose**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+**Purpose**: Provides an interface for creating families of related or dependent objects without specifying their
+concrete classes.
 
 ### Builder Pattern
 
-**Purpose**: Separates the construction of a complex object from its representation, allowing the same construction process to create various representations.
+**Purpose**: Separates the construction of a complex object from its representation, allowing the same construction
+process to create various representations.
 
 ### Prototype Pattern
 
-**Purpose**: Creates new objects by copying an existing object, known as the prototype, rather than creating new instances from scratch.
+**Purpose**: Creates new objects by copying an existing object, known as the prototype, rather than creating new
+instances from scratch.
 
 ## Structural Patterns
 
 ### Adapter Pattern
 
-**Purpose**: Allows the interface of an existing class to be used as another interface, making it compatible with the client's requirements.
+**Purpose**: Allows the interface of an existing class to be used as another interface, making it compatible with the
+client's requirements.
 
 ### Bridge Pattern
 
@@ -69,11 +74,13 @@
 
 ### Composite Pattern
 
-**Purpose**: Composes objects into tree structures to represent part-whole hierarchies. It allows clients to treat individual objects and compositions of objects uniformly.
+**Purpose**: Composes objects into tree structures to represent part-whole hierarchies. It allows clients to treat
+individual objects and compositions of objects uniformly.
 
 ### Decorator Pattern
 
-**Purpose**: Attaches additional responsibilities to objects dynamically, extending their functionality without altering their class.
+**Purpose**: Attaches additional responsibilities to objects dynamically, extending their functionality without altering
+their class.
 
 ### Facade Pattern
 
@@ -91,11 +98,13 @@
 
 ### Chain of Responsibility Pattern
 
-**Purpose**: Passes a request along a chain of handlers. Each handler decides either to process the request or pass it to the next handler in the chain.
+**Purpose**: Passes a request along a chain of handlers. Each handler decides either to process the request or pass it
+to the next handler in the chain.
 
 ### Command Pattern
 
-**Purpose**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
+**Purpose**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues,
+requests, and operations.
 
 ### Interpreter Pattern
 
@@ -103,39 +112,48 @@
 
 ### Iterator Pattern
 
-**Purpose**: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+**Purpose**: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying
+representation.
 
 ### Mediator Pattern
 
-**Purpose**: Defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly.
+**Purpose**: Defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping
+objects from referring to each other explicitly.
 
 ### Memento Pattern
 
-**Purpose**: Captures and externalizes an object's internal state, allowing the object to be restored to that state later.
+**Purpose**: Captures and externalizes an object's internal state, allowing the object to be restored to that state
+later.
 
 ### Observer Pattern
 
-**Purpose**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+**Purpose**: Defines a one-to-many dependency between objects so that when one object changes state, all its dependents
+are notified and updated automatically.
 
 ### State Pattern
 
-**Purpose**: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+**Purpose**: Allows an object to alter its behavior when its internal state changes. The object will appear to change
+its class.
 
 ### Strategy Pattern
 
-**Purpose**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets the algorithm vary independently from clients that use it.
+**Purpose**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets the
+algorithm vary independently from clients that use it.
 
 ### Template Method Pattern
 
-**Purpose**: Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+**Purpose**: Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the
+algorithm without changing its structure.
 
 ### Visitor Pattern
 
-**Purpose**: Represents an operation to be performed on elements of an object structure. It lets you define a new operation without changing the classes of the elements on which it operates.
+**Purpose**: Represents an operation to be performed on elements of an object structure. It lets you define a new
+operation without changing the classes of the elements on which it operates.
 
 ## Contributing
 
-Contributions to this repository are welcome. Feel free to add examples, explanations, or improvements to existing design patterns.
+Contributions to this repository are welcome. Feel free to add examples, explanations, or improvements to existing
+design patterns.
 
 ## License
 

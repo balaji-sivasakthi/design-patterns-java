@@ -1,14 +1,17 @@
 # Chain of Responsibility Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
-
 ## Introduction
 
-This project provides an example implementation of the Chain of Responsibility design pattern in Java. The Chain of Responsibility pattern is a behavioral design pattern that allows you to pass requests along a chain of handlers. Each handler decides either to process the request or pass it to the next handler in the chain. This pattern promotes loose coupling and flexibility in handling requests.
+This project provides an example implementation of the Chain of Responsibility design pattern in Java. The Chain of
+Responsibility pattern is a behavioral design pattern that allows you to pass requests along a chain of handlers. Each
+handler decides either to process the request or pass it to the next handler in the chain. This pattern promotes loose
+coupling and flexibility in handling requests.
 
 ## Motivation
 
@@ -19,11 +22,14 @@ The Chain of Responsibility design pattern is beneficial when:
 - You need to decouple the sender from the receiver.
 - You aim to provide multiple objects with an opportunity to handle a request.
 
-This pattern simplifies the design and makes it easy to add, modify, or remove handlers without affecting the client code.
+This pattern simplifies the design and makes it easy to add, modify, or remove handlers without affecting the client
+code.
 
 ## Real-World Example
 
-**Scenario**: In an order processing system, you have a series of handlers for order validation, discount calculation, and order confirmation. The Chain of Responsibility pattern can be used to process an order through this chain of handlers.
+**Scenario**: In an order processing system, you have a series of handlers for order validation, discount calculation,
+and order confirmation. The Chain of Responsibility pattern can be used to process an order through this chain of
+handlers.
 
 ```java
 // Handler interface

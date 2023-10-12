@@ -1,19 +1,23 @@
 # Mediator Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Mediator design pattern in Java. The Mediator pattern is a behavioral design pattern that promotes loose coupling among a set of objects by centralizing their communications through a mediator object. It is used to simplify complex relationships and interactions between objects.
+This project provides an example implementation of the Mediator design pattern in Java. The Mediator pattern is a
+behavioral design pattern that promotes loose coupling among a set of objects by centralizing their communications
+through a mediator object. It is used to simplify complex relationships and interactions between objects.
 
 ## Motivation
 
 The Mediator design pattern is beneficial when:
 
-- You have a set of objects that need to communicate and collaborate, but you want to avoid the direct coupling between them.
+- You have a set of objects that need to communicate and collaborate, but you want to avoid the direct coupling between
+  them.
 - You need to centralize control and logic related to the interactions between objects.
 - You aim to reduce the complexity and dependencies in your system.
 - You want to encapsulate the interactions between objects in a single component.
@@ -22,12 +26,15 @@ This pattern simplifies the interactions between objects and makes the system mo
 
 ## Real-World Example
 
-**Scenario**: In an air traffic control system, you have various components such as aircraft, runways, and the control tower. These components need to communicate and coordinate to ensure the safe takeoff, landing, and routing of aircraft. The Mediator pattern can be used to centralize the communication and control of these components.
+**Scenario**: In an air traffic control system, you have various components such as aircraft, runways, and the control
+tower. These components need to communicate and coordinate to ensure the safe takeoff, landing, and routing of aircraft.
+The Mediator pattern can be used to centralize the communication and control of these components.
 
 ```java
 // Mediator interface
 interface AirTrafficControl {
     void requestLanding(Aircraft aircraft);
+
     void requestTakeoff(Aircraft aircraft);
 }
 

@@ -3,7 +3,18 @@ package Creational.AbstractFactoryMethod;
 // Abstract Factory interface
 interface UIAbstractFactory {
     Button createButton();
+
     Checkbox createCheckbox();
+}
+
+// Abstract Product: Button
+interface Button {
+    void render();
+}
+
+// Abstract Product: Checkbox
+interface Checkbox {
+    void render();
 }
 
 // Concrete Factory 1: Light Theme Factory
@@ -28,11 +39,6 @@ class DarkThemeFactory implements UIAbstractFactory {
     }
 }
 
-// Abstract Product: Button
-interface Button {
-    void render();
-}
-
 // Concrete Products for Light Theme
 class LightButton implements Button {
     public void render() {
@@ -45,11 +51,6 @@ class DarkButton implements Button {
     public void render() {
         System.out.println("Rendering a dark button");
     }
-}
-
-// Abstract Product: Checkbox
-interface Checkbox {
-    void render();
 }
 
 // Concrete Products for Light Theme

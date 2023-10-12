@@ -11,7 +11,9 @@ abstract class DocumentGenerator {
 
     // Abstract methods to be implemented by subclasses
     protected abstract void createHeader();
+
     protected abstract void createContent();
+
     protected abstract void createFooter();
 }
 

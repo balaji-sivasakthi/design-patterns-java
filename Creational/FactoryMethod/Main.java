@@ -5,6 +5,11 @@ interface Creator {
     Product factoryMethod();
 }
 
+// Define the Product interface
+interface Product {
+    void display();
+}
+
 // Implement concrete Creator classes
 class ConcreteCreatorA implements Creator {
     public Product factoryMethod() {
@@ -16,11 +21,6 @@ class ConcreteCreatorB implements Creator {
     public Product factoryMethod() {
         return new ConcreteProductB();
     }
-}
-
-// Define the Product interface
-interface Product {
-    void display();
 }
 
 // Implement concrete Product classes

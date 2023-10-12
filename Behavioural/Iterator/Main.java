@@ -5,6 +5,13 @@ interface Playlist {
     Iterator<Song> createIterator();
 }
 
+// Iterator interface
+interface Iterator<T> {
+    boolean hasNext();
+
+    T next();
+}
+
 // Concrete aggregate
 class SongPlaylist implements Playlist {
     private Song[] songs;
@@ -29,12 +36,6 @@ class Song {
     public String getTitle() {
         return title;
     }
-}
-
-// Iterator interface
-interface Iterator<T> {
-    boolean hasNext();
-    T next();
 }
 
 // Concrete iterator

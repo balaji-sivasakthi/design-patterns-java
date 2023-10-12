@@ -3,6 +3,7 @@ package Structural.Decorator;
 // Component (Beverage)
 interface Beverage {
     double cost();
+
     String description();
 }
 

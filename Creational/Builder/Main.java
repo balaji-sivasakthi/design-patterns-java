@@ -1,6 +1,19 @@
 import java.util.HashMap;
 import java.util.Map;
 
+// Abstract Builder
+interface OrderBuilder {
+    OrderBuilder setCustomer(String customerName);
+
+    OrderBuilder addProduct(String productName, int quantity);
+
+    OrderBuilder setShippingAddress(String address);
+
+    OrderBuilder setPaymentMethod(String paymentMethod);
+
+    Order build();
+}
+
 // Director
 class OrderDirector {
     private OrderBuilder builder;
@@ -17,15 +30,6 @@ class OrderDirector {
                 .setPaymentMethod("Credit Card");
         return builder.build();
     }
-}
-
-// Abstract Builder
-interface OrderBuilder {
-    OrderBuilder setCustomer(String customerName);
-    OrderBuilder addProduct(String productName, int quantity);
-    OrderBuilder setShippingAddress(String address);
-    OrderBuilder setPaymentMethod(String paymentMethod);
-    Order build();
 }
 
 // Concrete Builder
@@ -68,9 +72,10 @@ class Order {
     private String shippingAddress;
     private String paymentMethod;
 
-    Order(){
+    Order() {
         this.products = new HashMap<>();
     }
+
     public String getCustomerName() {
         return customerName;
     }

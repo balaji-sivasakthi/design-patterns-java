@@ -7,12 +7,12 @@ import java.util.List;
 class TextEditor {
     private String content;
 
-    void setContent(String content) {
-        this.content = content;
-    }
-
     String getContent() {
         return content;
+    }
+
+    void setContent(String content) {
+        this.content = content;
     }
 
     Memento save() {

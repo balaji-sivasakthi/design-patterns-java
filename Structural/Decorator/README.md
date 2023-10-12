@@ -1,6 +1,7 @@
 # Decorator Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
@@ -8,7 +9,10 @@
 
 ## Introduction
 
-This project provides an example implementation of the Decorator design pattern in Java. The Decorator pattern is a structural design pattern that allows behavior to be added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. It promotes the open-closed principle, enabling the addition of new functionality without altering existing code.
+This project provides an example implementation of the Decorator design pattern in Java. The Decorator pattern is a
+structural design pattern that allows behavior to be added to individual objects, either statically or dynamically,
+without affecting the behavior of other objects from the same class. It promotes the open-closed principle, enabling the
+addition of new functionality without altering existing code.
 
 ## Motivation
 
@@ -18,16 +22,21 @@ The Decorator design pattern is beneficial when:
 - You need to extend the behavior of objects without subclassing.
 - You aim to keep classes open for extension but closed for modification.
 
-This pattern is particularly useful for enhancing the behavior of objects without creating an excessive number of subclasses.
+This pattern is particularly useful for enhancing the behavior of objects without creating an excessive number of
+subclasses.
 
 ## Real-World Example
 
-**Scenario**: In a coffee shop application, you have a base beverage (e.g., coffee) that customers can order. You want to allow customers to customize their beverage with various add-ons (e.g., milk, sugar, syrup) while keeping the base beverage price intact. The Decorator pattern helps achieve this customization without creating a class for each combination of add-ons.
+**Scenario**: In a coffee shop application, you have a base beverage (e.g., coffee) that customers can order. You want
+to allow customers to customize their beverage with various add-ons (e.g., milk, sugar, syrup) while keeping the base
+beverage price intact. The Decorator pattern helps achieve this customization without creating a class for each
+combination of add-ons.
 
 ```java
 // Component (Beverage)
 interface Beverage {
     double cost();
+
     String description();
 }
 

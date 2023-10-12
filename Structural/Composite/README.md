@@ -1,6 +1,7 @@
 # Composite Design Pattern Example - File System
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
@@ -8,7 +9,10 @@
 
 ## Introduction
 
-This project provides an example implementation of the Composite design pattern in Java using a simplified file system as a real-world scenario. The Composite pattern is a structural design pattern that allows you to create hierarchical structures where individual objects and compositions of objects share the same interface. In this example, folders and files in a file system are treated as components.
+This project provides an example implementation of the Composite design pattern in Java using a simplified file system
+as a real-world scenario. The Composite pattern is a structural design pattern that allows you to create hierarchical
+structures where individual objects and compositions of objects share the same interface. In this example, folders and
+files in a file system are treated as components.
 
 ## Motivation
 
@@ -16,13 +20,15 @@ The Composite design pattern is ideal for situations where:
 
 - You need to represent part-whole hierarchies, such as a file system with folders and files.
 - You want to treat individual objects and compositions of objects uniformly.
-- You aim to simplify client code by avoiding complex conditional statements to differentiate between individual and composite objects.
+- You aim to simplify client code by avoiding complex conditional statements to differentiate between individual and
+  composite objects.
 
 This pattern simplifies the design of hierarchical structures and enables recursive composition.
 
 ## Real-World Example
 
-**Scenario**: In this project, we emulate a simplified file system structure using the Composite pattern. Folders and files in the file system are represented as components.
+**Scenario**: In this project, we emulate a simplified file system structure using the Composite pattern. Folders and
+files in the file system are represented as components.
 
 ```java
 package Structural.Composite;

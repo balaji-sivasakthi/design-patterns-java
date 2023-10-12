@@ -1,6 +1,7 @@
 # Factory Method Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Usage](#usage)
@@ -8,7 +9,10 @@
 
 ## Introduction
 
-This project provides an example implementation of the Factory Method design pattern in Java. The Factory Method is a creational design pattern that defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. In this example, we demonstrate how to use the Factory Method to create objects of different types while ensuring that the client code remains decoupled from the specific object creation logic.
+This project provides an example implementation of the Factory Method design pattern in Java. The Factory Method is a
+creational design pattern that defines an interface for creating objects but allows subclasses to alter the type of
+objects that will be created. In this example, we demonstrate how to use the Factory Method to create objects of
+different types while ensuring that the client code remains decoupled from the specific object creation logic.
 
 ## Motivation
 
@@ -28,7 +32,8 @@ To use the Factory Method pattern in your project, follow these steps:
 2. Implement concrete Creator classes that extend the Creator and provide specific implementations for creating objects.
 3. Define an interface or an abstract class for the product that the Creator will create.
 4. Create concrete product classes that implement the product interface.
-5. In the client code, use the Creator to create objects, but without knowing the specific subclass that is being instantiated.
+5. In the client code, use the Creator to create objects, but without knowing the specific subclass that is being
+   instantiated.
 
 Example code is provided in the "Examples" section below.
 

@@ -3,13 +3,16 @@ package Structural.Bridge;
 // UI Abstraction
 interface UIComponent {
     void draw();
+
     void onClick();
 }
 
 // UI Implementor
 interface UIPlatform {
     void drawButton();
+
     void drawTextField();
+
     void onClick();
 }
 

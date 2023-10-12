@@ -5,6 +5,13 @@ interface Shape {
     void accept(Visitor visitor);
 }
 
+// Visitor interface
+interface Visitor {
+    void visit(Circle circle);
+
+    void visit(Rectangle rectangle);
+}
+
 // Concrete elements
 class Circle implements Shape {
     private int radius;
@@ -42,12 +49,6 @@ class Rectangle implements Shape {
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
-}
-
-// Visitor interface
-interface Visitor {
-    void visit(Circle circle);
-    void visit(Rectangle rectangle);
 }
 
 // Concrete visitor

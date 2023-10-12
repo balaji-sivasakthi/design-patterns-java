@@ -1,6 +1,7 @@
 # Singleton Pattern in Java
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Purpose](#purpose)
 - [Implementation](#implementation)
@@ -11,17 +12,21 @@
 
 ## Introduction
 
-The Singleton Pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. It is widely used when you want to control access to a shared resource or ensure that only one object of a particular class exists throughout your application's lifecycle.
+The Singleton Pattern is a creational design pattern that ensures a class has only one instance and provides a global
+point of access to that instance. It is widely used when you want to control access to a shared resource or ensure that
+only one object of a particular class exists throughout your application's lifecycle.
 
 ## Purpose
 
-The purpose of this project is to provide a simple implementation of the Singleton Pattern in Java and demonstrate its usage and best practices.
+The purpose of this project is to provide a simple implementation of the Singleton Pattern in Java and demonstrate its
+usage and best practices.
 
 ## Implementation
 
 ### Classic Singleton
 
-In the classic Singleton pattern, we have a private constructor and a static method to get the single instance. Here's how it's implemented:
+In the classic Singleton pattern, we have a private constructor and a static method to get the single instance. Here's
+how it's implemented:
 
 ```java
 public class Singleton {
@@ -77,5 +82,6 @@ ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.getInstance();
 
 - Use the Singleton pattern judiciously. Overusing it can lead to tightly coupled code.
 - Consider using the `enum` approach for Singleton as it handles lazy initialization and thread-safety effectively.
-- Keep the Singleton class's responsibilities focused on managing its instance rather than performing other unrelated tasks.
+- Keep the Singleton class's responsibilities focused on managing its instance rather than performing other unrelated
+  tasks.
 

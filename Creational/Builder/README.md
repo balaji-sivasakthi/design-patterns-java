@@ -1,6 +1,7 @@
 # Builder Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Usage](#usage)
@@ -8,7 +9,9 @@
 
 ## Introduction
 
-This project provides an example implementation of the Builder design pattern in Java to create complex "Order" objects. The Builder pattern is a creational design pattern that separates the construction of a complex object from its representation. It simplifies the creation of complex objects with multiple attributes and options.
+This project provides an example implementation of the Builder design pattern in Java to create complex "Order" objects.
+The Builder pattern is a creational design pattern that separates the construction of a complex object from its
+representation. It simplifies the creation of complex objects with multiple attributes and options.
 
 ## Motivation
 
@@ -18,7 +21,8 @@ The Builder design pattern is useful when:
 - You want to improve the readability and maintainability of code when working with object construction.
 - You need to ensure the immutability of objects once they are created.
 
-This pattern allows for flexible and fluent object construction, making it easier to work with complex objects in real-world scenarios.
+This pattern allows for flexible and fluent object construction, making it easier to work with complex objects in
+real-world scenarios.
 
 ## Usage
 
@@ -26,16 +30,17 @@ To use the Builder pattern in your project, follow these steps:
 
 1. Create a `Director` class, responsible for orchestrating the construction of complex objects.
 2. Define an `AbstractBuilder` interface with methods for constructing the different attributes of the object.
-3. Create one or more concrete builder classes that implement the `AbstractBuilder` interface to construct the object step by step.
+3. Create one or more concrete builder classes that implement the `AbstractBuilder` interface to construct the object
+   step by step.
 4. Create a `Product` class to represent the complex object.
 5. Use the `Director` and concrete builders to construct the `Product` object in a controlled and understandable way.
 
 Example code is provided in the "Real-World Example" section below.
 
-
 ## Real-World Example
 
-**Scenario**: This project demonstrates how to use the Builder pattern to create detailed "Order" objects. Orders can have multiple attributes, including customer information, product details, shipping options, and payment information.
+**Scenario**: This project demonstrates how to use the Builder pattern to create detailed "Order" objects. Orders can
+have multiple attributes, including customer information, product details, shipping options, and payment information.
 
 ```java
 import java.util.HashMap;
@@ -62,9 +67,13 @@ class OrderDirector {
 // Abstract Builder
 interface OrderBuilder {
     OrderBuilder setCustomer(String customerName);
+
     OrderBuilder addProduct(String productName, int quantity);
+
     OrderBuilder setShippingAddress(String address);
+
     OrderBuilder setPaymentMethod(String paymentMethod);
+
     Order build();
 }
 
@@ -108,9 +117,10 @@ class Order {
     private String shippingAddress;
     private String paymentMethod;
 
-    Order(){
+    Order() {
         this.products = new HashMap<>();
     }
+
     public String getCustomerName() {
         return customerName;
     }

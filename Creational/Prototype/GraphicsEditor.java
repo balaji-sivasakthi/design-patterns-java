@@ -3,16 +3,20 @@ package Creational.Prototype;
 // Prototype interface for graphic elements
 interface GraphicPrototype {
     GraphicPrototype clone();
+
     void draw();
+
     void setAttributes(String attributes);
 }
 
 // Concrete Graphic prototypes
 class Circle implements GraphicPrototype {
     private String attributes;
-    Circle(String attributes){
+
+    Circle(String attributes) {
         this.attributes = attributes;
     }
+
     public GraphicPrototype clone() {
         return new Circle(this.attributes);
     }
@@ -28,7 +32,8 @@ class Circle implements GraphicPrototype {
 
 class Rectangle implements GraphicPrototype {
     private String attributes;
-    Rectangle(String attributes){
+
+    Rectangle(String attributes) {
         this.attributes = attributes;
     }
 

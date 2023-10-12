@@ -3,6 +3,7 @@ package Behavioural.Mediator;
 // Mediator interface
 interface AirTrafficControl {
     void requestLanding(Aircraft aircraft);
+
     void requestTakeoff(Aircraft aircraft);
 }
 

@@ -1,6 +1,7 @@
 # Power Adapter Simulation with Adapter Pattern
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Usage](#usage)
@@ -8,7 +9,10 @@
 
 ## Introduction
 
-This project demonstrates the Adapter design pattern in a real-world scenario by simulating the use of power adapters for electrical devices in different countries. The Adapter pattern is a structural design pattern that allows objects with incompatible interfaces to collaborate, just like electrical devices that need different power adapters to work in different countries.
+This project demonstrates the Adapter design pattern in a real-world scenario by simulating the use of power adapters
+for electrical devices in different countries. The Adapter pattern is a structural design pattern that allows objects
+with incompatible interfaces to collaborate, just like electrical devices that need different power adapters to work in
+different countries.
 
 ## Motivation
 
@@ -34,7 +38,9 @@ Example code is provided in the "Real-World Example" section below.
 
 ## Real-World Example
 
-**Scenario**: In this simulation, we have electrical devices (adaptees) designed to work with the power supply in a specific country. Users need to adapt these devices to work in various countries with different power supplies (targets).
+**Scenario**: In this simulation, we have electrical devices (adaptees) designed to work with the power supply in a
+specific country. Users need to adapt these devices to work in various countries with different power supplies (
+targets).
 
 ```java
 // Target interface for power input

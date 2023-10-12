@@ -6,8 +6,15 @@ import java.util.List;
 // Subject interface
 interface Subject {
     void registerObserver(Observer observer);
+
     void removeObserver(Observer observer);
+
     void notifyObservers();
+}
+
+// Observer interface
+interface Observer {
+    void update(float temperature);
 }
 
 // Concrete subject
@@ -33,11 +40,6 @@ class WeatherStation implements Subject {
             observer.update(temperature);
         }
     }
-}
-
-// Observer interface
-interface Observer {
-    void update(float temperature);
 }
 
 // Concrete observer

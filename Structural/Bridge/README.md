@@ -1,6 +1,7 @@
 # User Interface Framework with Bridge Pattern
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Usage](#usage)
@@ -8,17 +9,22 @@
 
 ## Introduction
 
-This project showcases the Bridge design pattern in the development of a user interface framework. The Bridge pattern separates the abstraction of user interface components (e.g., buttons, text fields) from their concrete implementations (e.g., Windows, macOS). It enables flexibility and reusability when creating UI components that can work on different platforms.
+This project showcases the Bridge design pattern in the development of a user interface framework. The Bridge pattern
+separates the abstraction of user interface components (e.g., buttons, text fields) from their concrete
+implementations (e.g., Windows, macOS). It enables flexibility and reusability when creating UI components that can work
+on different platforms.
 
 ## Motivation
 
 The Bridge design pattern is beneficial when:
 
 - You want to develop a user interface framework that works on multiple platforms (Windows, macOS, Linux, etc.).
-- You need to support various UI component types (buttons, text fields, checkboxes) that can work with different platforms.
+- You need to support various UI component types (buttons, text fields, checkboxes) that can work with different
+  platforms.
 - You want to avoid a combinatorial explosion of classes (e.g., a class for every UI component on every platform).
 
-This pattern simplifies the development of a UI framework by separating the abstraction (UI components) from their concrete implementations (platform-specific behavior).
+This pattern simplifies the development of a UI framework by separating the abstraction (UI components) from their
+concrete implementations (platform-specific behavior).
 
 ## Usage
 
@@ -26,15 +32,18 @@ To use the Bridge pattern in your project, follow these steps:
 
 1. Identify the need for a user interface framework with multiple platforms and UI component types.
 2. Create an abstraction interface or abstract class that defines the methods expected by UI components.
-3. Create concrete implementation classes for each platform (e.g., WindowsUI, MacOSUI) that implement the platform-specific behavior for UI components.
-4. Create concrete UI component classes that extend the abstraction and maintain a reference to an implementation object.
+3. Create concrete implementation classes for each platform (e.g., WindowsUI, MacOSUI) that implement the
+   platform-specific behavior for UI components.
+4. Create concrete UI component classes that extend the abstraction and maintain a reference to an implementation
+   object.
 5. In the concrete UI component classes, delegate calls to the implementation object for platform-specific behavior.
 
 Example code is provided in the "Real-World Example" section below.
 
 ## Real-World Example
 
-**Scenario**: In this project, we're developing a user interface framework that works on different platforms (Windows and macOS) and supports various UI components (buttons, text fields).
+**Scenario**: In this project, we're developing a user interface framework that works on different platforms (Windows
+and macOS) and supports various UI components (buttons, text fields).
 
 ```java
 // UI Abstraction

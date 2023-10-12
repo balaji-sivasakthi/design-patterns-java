@@ -1,13 +1,17 @@
 # Proxy Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Proxy design pattern in Java. The Proxy pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it. It is often used to add an extra level of control, such as lazy initialization, access control, or logging, without changing the actual behavior of the real subject.
+This project provides an example implementation of the Proxy design pattern in Java. The Proxy pattern is a structural
+design pattern that provides a surrogate or placeholder for another object to control access to it. It is often used to
+add an extra level of control, such as lazy initialization, access control, or logging, without changing the actual
+behavior of the real subject.
 
 ## Motivation
 
@@ -19,11 +23,14 @@ The Proxy design pattern is beneficial when:
 - You want to create a virtual proxy for expensive-to-create objects.
 - You need to perform access control, logging, or monitoring.
 
-This pattern provides a way to manage interactions with the real subject while keeping the client code unaware of the added control.
+This pattern provides a way to manage interactions with the real subject while keeping the client code unaware of the
+added control.
 
 ## Real-World Example
 
-**Scenario**: In a file downloading application, you want to provide the user with a way to download files. However, some files are large and expensive to download. You can use the Proxy pattern to implement a `FileDownloader` proxy that loads the actual file content only when requested.
+**Scenario**: In a file downloading application, you want to provide the user with a way to download files. However,
+some files are large and expensive to download. You can use the Proxy pattern to implement a `FileDownloader` proxy that
+loads the actual file content only when requested.
 
 ```java
 // Subject interface

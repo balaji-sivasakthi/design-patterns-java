@@ -1,6 +1,7 @@
 # Facade Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
@@ -9,7 +10,9 @@
 
 ## Introduction
 
-This project provides an example implementation of the Facade design pattern in Java. The Facade pattern is a structural design pattern that provides a simplified interface to a set of interfaces in a subsystem. It offers a unified, higher-level interface to make it easier for clients to interact with the subsystem while hiding its complexity.
+This project provides an example implementation of the Facade design pattern in Java. The Facade pattern is a structural
+design pattern that provides a simplified interface to a set of interfaces in a subsystem. It offers a unified,
+higher-level interface to make it easier for clients to interact with the subsystem while hiding its complexity.
 
 ## Motivation
 
@@ -24,30 +27,39 @@ This pattern simplifies the interaction with complex systems and promotes loose 
 
 ## Real-World Example
 
-**Scenario**: In a home theater system, you have various devices such as a DVD player, amplifier, projector, and screen. To watch a movie, you need to perform multiple operations on these devices, like turning them on, setting input sources, and adjusting volumes. The Facade pattern can simplify this process.
+**Scenario**: In a home theater system, you have various devices such as a DVD player, amplifier, projector, and screen.
+To watch a movie, you need to perform multiple operations on these devices, like turning them on, setting input sources,
+and adjusting volumes. The Facade pattern can simplify this process.
 
 ```java
 // Subsystem components
 class DVDPlayer {
     void on() { /* Implementation */ }
+
     void play(String movie) { /* Implementation */ }
+
     void stop() { /* Implementation */ }
 }
 
 class Amplifier {
     void on() { /* Implementation */ }
+
     void setSurroundSound() { /* Implementation */ }
+
     void setVolume(int volume) { /* Implementation */ }
 }
 
 class Projector {
     void on() { /* Implementation */ }
+
     void setInput(DVDPlayer dvdPlayer) { /* Implementation */ }
+
     void wideScreenMode() { /* Implementation */ }
 }
 
 class Screen {
     void down() { /* Implementation */ }
+
     void up() { /* Implementation */ }
 }
 

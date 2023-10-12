@@ -1,13 +1,16 @@
 # Iterator Design Pattern Example
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Motivation](#motivation)
 - [Real-World Example](#real-world-example)
 
 ## Introduction
 
-This project provides an example implementation of the Iterator design pattern in Java. The Iterator pattern is a behavioral design pattern that provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It is commonly used for traversing collections or lists.
+This project provides an example implementation of the Iterator design pattern in Java. The Iterator pattern is a
+behavioral design pattern that provides a way to access elements of an aggregate object sequentially without exposing
+its underlying representation. It is commonly used for traversing collections or lists.
 
 ## Motivation
 
@@ -22,7 +25,9 @@ This pattern simplifies the process of iterating through collections and makes i
 
 ## Real-World Example
 
-**Scenario**: In a music player application, you have a playlist of songs, and you want to provide a way to traverse the songs in the playlist. The Iterator pattern can be used to create an iterator that allows you to access the songs sequentially.
+**Scenario**: In a music player application, you have a playlist of songs, and you want to provide a way to traverse the
+songs in the playlist. The Iterator pattern can be used to create an iterator that allows you to access the songs
+sequentially.
 
 ```java
 // Aggregate interface
@@ -59,6 +64,7 @@ class Song {
 // Iterator interface
 interface Iterator<T> {
     boolean hasNext();
+
     T next();
 }
 
@@ -88,9 +94,9 @@ class ArrayIterator implements Iterator<Song> {
 public class Main {
     public static void main(String[] args) {
         Song[] songs = {
-            new Song("Song 1"),
-            new Song("Song 2"),
-            new Song("Song 3")
+                new Song("Song 1"),
+                new Song("Song 2"),
+                new Song("Song 3")
         };
 
         Playlist playlist = new SongPlaylist(songs);
