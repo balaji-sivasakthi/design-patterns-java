@@ -86,15 +86,3 @@ public class Main {
     }
 }
 ```
-
-## Contributing
-
-If you want to contribute to this project, please follow the [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify and expand this README to suit your specific project. A well-documented README helps users and contributors understand your implementation of the Factory Method design pattern and how to use it in their own projects.
