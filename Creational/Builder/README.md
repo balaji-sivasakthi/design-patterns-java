@@ -38,6 +38,9 @@ Example code is provided in the "Real-World Example" section below.
 **Scenario**: This project demonstrates how to use the Builder pattern to create detailed "Order" objects. Orders can have multiple attributes, including customer information, product details, shipping options, and payment information.
 
 ```java
+import java.util.HashMap;
+import java.util.Map;
+
 // Director
 class OrderDirector {
     private OrderBuilder builder;
@@ -48,10 +51,10 @@ class OrderDirector {
 
     public Order construct() {
         builder.setCustomer("John Doe")
-            .addProduct("Product A", 2)
-            .addProduct("Product B", 1)
-            .setShippingAddress("123 Main St")
-            .setPaymentMethod("Credit Card");
+                .addProduct("Product A", 2)
+                .addProduct("Product B", 1)
+                .setShippingAddress("123 Main St")
+                .setPaymentMethod("Credit Card");
         return builder.build();
     }
 }
@@ -79,7 +82,7 @@ class ConcreteOrderBuilder implements OrderBuilder {
     }
 
     public OrderBuilder addProduct(String productName, int quantity) {
-        order.addProduct(productName, quantity);
+        order.setProducts(productName, quantity);
         return this;
     }
 
@@ -105,10 +108,39 @@ class Order {
     private String shippingAddress;
     private String paymentMethod;
 
-    // Constructor, getters, and setters for attributes.
+    Order(){
+        this.products = new HashMap<>();
+    }
+    public String getCustomerName() {
+        return customerName;
+    }
 
-    public String toString() {
-        // Generate a detailed order summary.
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public Map<String, Integer> getProducts() {
+        return products;
+    }
+
+    public void setProducts(String productName, int qty) {
+        this.products.put(productName, qty);
+    }
+
+    public String getShippingAddress() {
+        return shippingAddress;
+    }
+
+    public void setShippingAddress(String shippingAddress) {
+        this.shippingAddress = shippingAddress;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 }
 
@@ -119,6 +151,7 @@ public class Main {
         OrderDirector director = new OrderDirector(builder);
 
         Order order = director.construct();
-        System.out.println(order.toString());
+        System.out.println(order.getProducts());
     }
 }
+```
